@@ -19,12 +19,12 @@ class Keeper extends StatelessWidget {
   }	
 }
 
-
+//Drawer class 
 class KeeperDrawer extends StatelessWidget {
 // refer: https://docs.flutter.io/flutter/widgets/ListView-class.html
 // refer: https://docs.flutter.io/flutter/widgets/GestureDetector-class.html
 // refer: https://docs.flutter.io/flutter/material/ListTile-class.html
-
+  //our widget for the drawer components
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -32,7 +32,7 @@ class KeeperDrawer extends StatelessWidget {
         child: new ListView(
           padding: const EdgeInsets.only(top: 0.0),
           children: <Widget>[
-            new UserAccountsDrawerHeader(
+            new UserAccountsDrawerHeader( //get user info and display in the header
               accountName: const Text(_AccountName),
               accountEmail: const Text(_AccountEmail),
               currentAccountPicture: new CircleAvatar(
@@ -102,7 +102,7 @@ class KeeperDrawer extends StatelessWidget {
       )
     );
   }
-
+//if you want to switch to another account
   _onTapOtherAccounts(BuildContext context) {
     Navigator.of(context).pop();
     showDialog<Null>(
@@ -120,7 +120,7 @@ class KeeperDrawer extends StatelessWidget {
       ),
     );
   }
-
+//if you want to go to a particular section, response is 'not implemented'... for now!
   _onListTileTap(BuildContext context) {
     Navigator.of(context).pop();
     showDialog<Null>(
