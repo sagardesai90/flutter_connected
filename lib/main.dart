@@ -98,7 +98,7 @@ class KeeperDrawer extends StatelessWidget {
         title: new Text('BMW Connected'),
       ),
       body: new Center(
-        child: new Text('Hello World!')
+        child: new Text('This is a simple version of the BMW connected app, done with flutter.')
       )
     );
   }
